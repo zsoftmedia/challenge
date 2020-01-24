@@ -1,0 +1,228 @@
+$company-name-font: 'Roboto',
+sans-serif;
+$company-description-font:'Roboto',
+sans-serif;
+$company-body-label-font: 'Roboto',
+sans-serif;
+$company-jobs-font: 'Oswald',
+sans-serif;
+$company-active-font-color:rgba(77, 74, 74, 0.986);
+$frisky-yellow: #F6B932;
+$sloppy-grey: #B4B4B4;
+$main-blue: #1C0A90;
+$chackBox-blue: rgb(63, 176, 211);
+$Links:#1C0A90;
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.a {
+    color: $Links;
+}
+
+.company-profile {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    .row {
+        margin: 0;
+        display: block;
+    }
+    .company-header {
+        width: 100%;
+        height: 145px;
+        background-color: $main-blue;
+    }
+    .company-avatarImage {
+        border-radius: 50%;
+        width: 150px;
+    }
+    .company-body {
+        display: flex;
+        flex-direction: row;
+        .left-column {
+            padding: 30px;
+            .company-avatar {
+                .margin-wrapper {
+                    position: relative;
+                    width: 100%;
+                    top: -92px;
+                    left: 32px;
+                }
+            }
+            .company-details {
+                .company-name {
+                    font-family: $company-name-font;
+                    font-size: 0.9rem;
+                    color: $frisky-yellow;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    margin-top: -20px;
+                }
+                .company-socials {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100px;
+                    margin: 1px auto;
+                }
+                .company-website {
+                    font-size: 9.9px;
+                    text-align: center;
+                    line-height: 33px;
+                    a {
+                        color: $Links;
+                        font-weight: bold;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+                border-bottom: 1px solid $sloppy-grey;
+                margin-top: -88px;
+                margin-left: 26px;
+            }
+            .company-summary {
+                .company-summary-element {
+                    margin: 2px;
+                    font-size: 12px;
+                    .company-summary-label {
+                        color: $main-blue;
+                        margin-right: 1px;
+                        font-size: 11.5px;
+                        font-weight: 800;
+                        padding: 2px;
+                        font-family: $company-name-font;
+                    }
+                }
+                margin-top: 20px;
+            }
+        }
+        .company-stack {
+            .company-stack-label {
+                color: $main-blue;
+                font-weight: 900;
+                font-size: 0.7rem;
+                font-family: $company-name-font;
+                margin-bottom: 7px;
+            }
+            margin-top: 20px;
+            margin-bottom: 20px;
+            .custom-checkbox {
+                .checkbox {
+                    background-color: $chackBox-blue;
+                }
+                .custom-control-label {
+                    top: -3px;
+                }
+                font-size: 0.7rem;
+                font-weight: 700;
+            }
+        }
+        .right-column {
+            margin-top: 80px;
+            margin-left: 20PX;
+            .company-active-jobs {
+                font-family: $company-jobs-font;
+                color: $company-active-font-color;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            .company-description {
+                .company-body-label {
+                    color: $frisky-yellow;
+                    font-size: 0.9rem;
+                }
+                margin-top: 30px;
+                font-size: 11.8px;
+                font-family: $company-description-font;
+                width: 99%;
+            }
+        }
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media screen and (max-width: 736px) {
+    .company-profile .company-body {
+        display: inline-block;
+        max-width: 100%;
+    }
+    .company-body .left-column .company-avatar .margin-wrapper {
+        position: relative;
+        width: 70%;
+        top: -151px;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-around;
+        img {
+            position: relative;
+            top: -20px;
+            left: -30px;
+        }
+    }
+    .company-profile .company-body .left-column .company-details {
+        border-bottom: none;
+        margin-left: 0;
+        margin-top: -116px;
+        .company-name {
+            font-size: 1.5rem;
+        }
+    }
+    .company-profile .company-body .right-column {
+        margin-top: -20px;
+        margin-left: 20PX;
+    }
+    .map {
+        width: 100%;
+        border: 0px none;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .company-profile .company-body {
+        display: inline-block;
+        max-width: 100%;
+    }
+    .company-body .left-column .company-avatar .margin-wrapper {
+        position: relative;
+        width: 70%;
+        top: -151px;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-around;
+        img {
+            position: relative;
+            top: -20px;
+            left: -30px;
+        }
+    }
+    .company-profile .company-body .left-column .company-details {
+        border-bottom: none;
+        margin-left: 0;
+        margin-top: -116px;
+        .company-name {
+            font-size: 1.5rem;
+        }
+    }
+    .company-profile .company-body .right-column {
+        margin-top: -20px;
+        margin-left: 20PX;
+    }
+    .map {
+        width: 100%;
+        border: 0px none;
+        margin-top: 25px;
+    }
+}

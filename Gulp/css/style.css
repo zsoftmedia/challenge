@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+* {
+  box-sizing: border-box; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.a {
+  color: #1C0A90; }
+
+.company-profile {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  .company-profile .row {
+    margin: 0;
+    display: block; }
+  .company-profile .company-header {
+    width: 100%;
+    height: 145px;
+    background-color: #1C0A90; }
+  .company-profile .company-avatarImage {
+    border-radius: 50%;
+    width: 150px; }
+  .company-profile .company-body {
+    display: flex;
+    flex-direction: row; }
+    .company-profile .company-body .left-column {
+      padding: 30px; }
+      .company-profile .company-body .left-column .company-avatar .margin-wrapper {
+        position: relative;
+        width: 100%;
+        top: -92px;
+        left: 32px; }
+      .company-profile .company-body .left-column .company-details {
+        border-bottom: 1px solid #B4B4B4;
+        margin-top: -88px;
+        margin-left: 26px; }
+        .company-profile .company-body .left-column .company-details .company-name {
+          font-family: "Roboto", sans-serif;
+          font-size: 0.9rem;
+          color: #F6B932;
+          text-align: center;
+          margin-bottom: 20px;
+          margin-top: -20px; }
+        .company-profile .company-body .left-column .company-details .company-socials {
+          display: flex;
+          justify-content: space-between;
+          width: 100px;
+          margin: 1px auto; }
+        .company-profile .company-body .left-column .company-details .company-website {
+          font-size: 9.9px;
+          text-align: center;
+          line-height: 33px; }
+          .company-profile .company-body .left-column .company-details .company-website a {
+            color: #1C0A90;
+            font-weight: bold; }
+            .company-profile .company-body .left-column .company-details .company-website a:hover {
+              text-decoration: none; }
+      .company-profile .company-body .left-column .company-summary {
+        margin-top: 20px; }
+        .company-profile .company-body .left-column .company-summary .company-summary-element {
+          margin: 2px;
+          font-size: 12px; }
+          .company-profile .company-body .left-column .company-summary .company-summary-element .company-summary-label {
+            color: #1C0A90;
+            margin-right: 1px;
+            font-size: 11.5px;
+            font-weight: 800;
+            padding: 2px;
+            font-family: "Roboto", sans-serif; }
+    .company-profile .company-body .company-stack {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .company-profile .company-body .company-stack .company-stack-label {
+        color: #1C0A90;
+        font-weight: 900;
+        font-size: 0.7rem;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 7px; }
+      .company-profile .company-body .company-stack .custom-checkbox {
+        font-size: 0.7rem;
+        font-weight: 700; }
+        .company-profile .company-body .company-stack .custom-checkbox .checkbox {
+          background-color: #3fb0d3; }
+        .company-profile .company-body .company-stack .custom-checkbox .custom-control-label {
+          top: -3px; }
+    .company-profile .company-body .right-column {
+      margin-top: 80px;
+      margin-left: 20PX; }
+      .company-profile .company-body .right-column .company-active-jobs {
+        font-family: "Oswald", sans-serif;
+        color: rgba(77, 74, 74, 0.986);
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-weight: bold; }
+      .company-profile .company-body .right-column .company-description {
+        margin-top: 30px;
+        font-size: 11.8px;
+        font-family: "Roboto", sans-serif;
+        width: 99%; }
+        .company-profile .company-body .right-column .company-description .company-body-label {
+          color: #F6B932;
+          font-size: 0.9rem; }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 736px) {
+  .company-profile .company-body {
+    display: inline-block;
+    max-width: 100%; }
+  .company-body .left-column .company-avatar .margin-wrapper {
+    position: relative;
+    width: 70%;
+    top: -151px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around; }
+    .company-body .left-column .company-avatar .margin-wrapper img {
+      position: relative;
+      top: -20px;
+      left: -30px; }
+  .company-profile .company-body .left-column .company-details {
+    border-bottom: none;
+    margin-left: 0;
+    margin-top: -116px; }
+    .company-profile .company-body .left-column .company-details .company-name {
+      font-size: 1.5rem; }
+  .company-profile .company-body .right-column {
+    margin-top: -20px;
+    margin-left: 20PX; }
+  .map {
+    width: 100%;
+    border: 0px none;
+    margin-top: 25px; } }
+
+@media screen and (max-width: 980px) {
+  .company-profile .company-body {
+    display: inline-block;
+    max-width: 100%; }
+  .company-body .left-column .company-avatar .margin-wrapper {
+    position: relative;
+    width: 70%;
+    top: -151px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around; }
+    .company-body .left-column .company-avatar .margin-wrapper img {
+      position: relative;
+      top: -20px;
+      left: -30px; }
+  .company-profile .company-body .left-column .company-details {
+    border-bottom: none;
+    margin-left: 0;
+    margin-top: -116px; }
+    .company-profile .company-body .left-column .company-details .company-name {
+      font-size: 1.5rem; }
+  .company-profile .company-body .right-column {
+    margin-top: -20px;
+    margin-left: 20PX; }
+  .map {
+    width: 100%;
+    border: 0px none;
+    margin-top: 25px; } }
+
+.job-ticket {
+  border: 1px solid #3927B1;
+  border-top: 2px solid #bcb8d8;
+  height: 130px;
+  margin-bottom: 30px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between; }
+  .job-ticket .avatar {
+    width: 22%;
+    position: relative;
+    top: -8px;
+    padding: 2px; }
+    .job-ticket .avatar img {
+      position: absolute;
+      width: 110px;
+      border-radius: 50%; }
+  .job-ticket .job-details {
+    width: 60%; }
+    .job-ticket .job-details a {
+      text-decoration: none;
+      color: #1C0A90;
+      line-height: 19px; }
+    .job-ticket .job-details .job-title {
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+      font-size: 15px;
+      color: #1C0A90;
+      font-weight: 900; }
+    .job-ticket .job-details .job-subtitle {
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 9px; }
+    .job-ticket .job-details .job-progress-bar-rail {
+      width: 70%;
+      margin-bottom: 10px;
+      background-color: #F6B932;
+      height: 4px;
+      position: relative;
+      border-radius: 4px; }
+      .job-ticket .job-details .job-progress-bar-rail .job-progress-bar {
+        position: absolute;
+        border-radius: 4px;
+        left: 0;
+        background-color: #1C0A90;
+        height: 6px;
+        top: -1px; }
+    .job-ticket .job-details .job-description {
+      line-height: 15px;
+      font-family: "Roboto", sans-serif; }
+  .job-ticket .job-buttons {
+    margin: 30px; }
+    .job-ticket .job-buttons a {
+      text-decoration: none; }
+    .job-ticket .job-buttons .job-view-more {
+      color: #5A5A5A;
+      display: flex;
+      justify-content: space-around; }
+    .job-ticket .job-buttons .job-button-login {
+      font-family: "Roboto", sans-serif;
+      color: #fff;
+      background-color: #1C0A90;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      height: 30px;
+      width: 110px;
+      padding: 2px;
+      display: block; }
+      .job-ticket .job-buttons .job-button-login:hover {
+        background-color: transparent;
+        color: #1C0A90;
+        border: 1px solid #1C0A90;
+        text-decoration: none; }
+
+@media screen and (max-width: 736px) {
+  .job-ticket {
+    width: 93%;
+    height: 198px;
+    padding: 12px;
+    display: block;
+    /* margin: 2px auto; */
+    justify-content: space-between; }
+    .job-ticket .avatar img {
+      display: none; }
+    .job-ticket .job-title {
+      font-weight: bolder; }
+    .job-ticket .job-details {
+      width: 92%; }
+    .job-ticket .job-buttons .job-button-login {
+      margin: 2px auto; } }
